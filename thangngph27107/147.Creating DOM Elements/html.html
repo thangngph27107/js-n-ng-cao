@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- TOP NAVIGATION -->
+    <nav>
+        <p class="welcome">Log in to get started</p>
+        <!-- <img src="logo.png" alt="Logo" class="logo"> -->
+        <form action="login">
+            <input type="text" placeholder="user" class="login_input login_input--user">
+            <!-- In praction, use type="password" -->
+            <input type="text" placeholder="PIN" class="login_input--pin">
+            <button class="login_btn">&rarr;</button>
+        </form>
+    </nav>
+
+    <main class="app">
+        <!-- BALANCE -->
+        <div class="balance">
+            <div>
+                <p class="balance_label">Current balance</p>
+
+                <p class="balance_date">As of <span class="date">05/03/2037</span></p>
+            </div>
+            <p class="balance_value">00000$</p>
+        </div>
+
+        <!-- MOVEMENTS -->
+        <div class="movements">
+            <div class="movements_row">
+                <div class="movements_type movements_type--deposit">
+                    2 deposit
+                </div>
+
+                <div class="movements_date">3 days ago</div>
+                <div class="movements_value">4 000$</div>
+            </div>
+            <div class="movements_row">
+                <div class="movements_type movements_type--withdrawal">
+                    1 widthdrawal
+                </div>
+                <div class="movements_date">24/01/2037</div>
+                <div class="movements_value">-378$</div>
+            </div>
+        </div>
+    </main>
+    <script src="js.js"></script>
+</body>
+
+</html>
